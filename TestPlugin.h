@@ -127,7 +127,6 @@ public:
 					"Enabled",
 					"Auto Neutral",
 					"Require Clutch",
-					"Bite point",
 					"Controller",
 					"1st Gear",
 					"2nd Gear",
@@ -136,6 +135,7 @@ public:
 					"5th Gear",
 					"6th Gear",
 					"Reverse",
+					"Bite point",
 					"Save Changes",
 				};
 
@@ -145,7 +145,7 @@ public:
 					m_pGame->WriteText( 73.0f, 70.0f + ( static_cast< float >( i ) * 21.0f ), aszSelections[ i ] );
 
 
-					if (i > 4 && i < 12)
+					if (i > 3 && i < 11)
 					{
 						if (Keys[i-4] < 256)
 							sprintf(m_szTemp, "Keyboard Button %i", Keys[i-4]);
@@ -180,11 +180,11 @@ public:
 								sprintf(m_szTemp,"False");
 
 						}
-						if (i == 3)
+						if (i == 11)  // Bitepoint. Added by manteka
 						{
 							sprintf(m_szTemp, itoa(bitepoint, tmpStr3, 10));
 						}
-						if (i == 4)
+						if (i == 3)
 						{
 							if (numj > 0)
 								sprintf(m_szTemp,"Index: %i  Name: %s", cindex, jname);
@@ -241,7 +241,7 @@ public:
 
 		if( bSelect )
 		{
-			if( m_iSelection > 4 && m_iSelection < 12 )
+			if( m_iSelection > 3 && m_iSelection < 11 )
 			{
 				m_dSec = 6;
 				listenid = m_iSelection-4;
@@ -270,23 +270,23 @@ public:
 			if( m_iSelection >= m_iSelections )
 				m_iSelection  = 0;
 		}
-		// Set bitepoint
-		if (bLeft && m_iSelection == 3)
+		// Set bitepoint. Added by manteka
+		if (bLeft && m_iSelection == 11)
 		{
 			--bitepoint;
 		}
-		if (bRight && m_iSelection == 3)
+		if (bRight && m_iSelection == 11)
 		{
 			++bitepoint;
 		}
 		//switch joystick
-		if( bLeft && m_iSelection == 4 )
+		if( bLeft && m_iSelection == 3 )
 		{
 			--cindex;
 			if (cindex < 0) cindex = 0;
 			SwitchJoystick(hWin, cindex);
 		}
-		if( bRight && m_iSelection == 4 )
+		if( bRight && m_iSelection == 3 )
 		{
 			++cindex;
 			if (cindex > numj-1) cindex = numj-1;

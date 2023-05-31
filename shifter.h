@@ -131,7 +131,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 		{
 			clutch = *(float*)(carptr+0x86c);
 
-			if(clutch>(bitepoint/100))clutchon = true; else clutchon = false;  // Bitepoint use. Added by manteka
+			if(clutch>(float(bitepoint)/100))clutchon = true; else clutchon = false;  // Bitepoint use. Added by manteka
 
 			if (rclutch == false) clutchon = true;
 
