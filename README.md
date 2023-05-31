@@ -5,4 +5,4 @@ Just added the option to select clutch bite point. How much % of the clutch need
 
 Files modified:
   - shifter.h: Added bitepoint logic and ini file read and write compatibility for it.
-  - RHBRTestPlugin.h: Chaged plugin menu to display new bitepoint option.
+  - TestPlugin.h: Chaged plugin menu to display new bitepoint option.
