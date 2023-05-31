@@ -18,6 +18,7 @@ long carptr = NULL;
 float clutch = 0;
 bool clutchon = false;
 bool rclutch = true;
+int bitepoint = 65; // How much % cluth need to be pressed for gears to change. Added by manteka 
 int cindex = 0;
 int curgear;
 int lastgear;
@@ -61,6 +62,8 @@ void Load()
 	if (!ReadFromFile("MAIN", "Enabled") == 0) onoff = atoi(ReadFromFile("MAIN", "Enabled"));
 	if (!ReadFromFile("MAIN", "AutoNeutral") == 0) hbutton = atoi(ReadFromFile("MAIN", "AutoNeutral"));
 	if (!ReadFromFile("MAIN", "RequireClutch") == 0) rclutch = atoi(ReadFromFile("MAIN", "RequireClutch"));
+	if (!ReadFromFile("MAIN", "Bite point") == 0) bitepoint = atoi(ReadFromFile("MAIN", "Bite point"));  // Added by manteka
+
 	for (int i = 0; i < 7 ; i++ )
 	{
 		
@@ -87,6 +90,8 @@ void Save()
 	WriteToFile("MAIN", "AutoNeutral", tmpStr2);
 	itoa(rclutch, tmpStr2,10);
 	WriteToFile("MAIN", "RequireClutch", tmpStr2);
+	itoa(bitepoint, tmpStr2, 10);
+	WriteToFile("MAIN", "Bite point", tmpStr2);  // Added by manteka
 	for (int i = 0; i < 7 ; i++ )
 	{
 		sprintf(tmpStr, "Key%d", i);
@@ -112,7 +117,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 		hWin = GetWindowHandle(GetCurrentProcessId());
 
 
-	timeBeginPeriod(1);
+	//timeBeginPeriod(1);    THIS MUST BE FIXED!!!!!!
 	while (running == true)
 	{
 		if (!didinit) Init();
@@ -125,7 +130,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 		{
 			clutch = *(float*)(carptr+0x86c);
 
-			if(clutch>0.85)clutchon = true; else clutchon = false;
+			if(clutch>(bitepoint/100))clutchon = true; else clutchon = false;  // Bitepoint use. Added by manteka
 
 			if (rclutch == false) clutchon = true;
 

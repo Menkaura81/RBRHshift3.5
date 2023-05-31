@@ -8,6 +8,7 @@
 #include "IPlugin.h"
 #include "IRBRGame.h"
 #include "PluginHelpers.h"
+#include "stdlib.h"
 
 #include "Gendef.h" // 2D Gfx header
 #include <stdio.h>
@@ -19,6 +20,7 @@ extern char jname[255];
 extern int cindex;
 extern bool hbutton;
 extern bool rclutch;
+extern int bitepoint; // added by manteka 
 extern bool onoff;
 extern int listenid;
 extern int numj;
@@ -27,6 +29,7 @@ extern void SwitchJoystick(HWND hDlg, int jid);
 extern HWND hWin;
 extern bool KeyDown(DWORD KeyID);
 extern void Save();
+char tmpStr3[255];
 
 //------------------------------------------------------------------------------------------------//
 
@@ -108,7 +111,7 @@ public:
 		}
 
 		
-				m_iSelections = 12;
+				m_iSelections = 13;
 				m_pGame->DrawBlackOut( 0.0f, 0.0f, 0.0f, 0.0f );
 				m_pGame->DrawSelection( 0.0f, 68.0f + ( static_cast< float >( m_iSelection ) * 21.0f ), 250.0f );
 				m_pGame->SetMenuColor( IRBRGame::MENU_SELECTION );	
@@ -124,6 +127,7 @@ public:
 					"Enabled",
 					"Auto Neutral",
 					"Require Clutch",
+					"Bite point",
 					"Controller",
 					"1st Gear",
 					"2nd Gear",
@@ -141,7 +145,7 @@ public:
 					m_pGame->WriteText( 73.0f, 70.0f + ( static_cast< float >( i ) * 21.0f ), aszSelections[ i ] );
 
 
-					if (i > 3 && i < 11)
+					if (i > 4 && i < 12)
 					{
 						if (Keys[i-4] < 256)
 							sprintf(m_szTemp, "Keyboard Button %i", Keys[i-4]);
@@ -178,13 +182,17 @@ public:
 						}
 						if (i == 3)
 						{
+							sprintf(m_szTemp, itoa(bitepoint, tmpStr3, 10));
+						}
+						if (i == 4)
+						{
 							if (numj > 0)
 								sprintf(m_szTemp,"Index: %i  Name: %s", cindex, jname);
 							else
 								sprintf(m_szTemp,"No Controllers Found");
 
 						}
-						if (i == 11)
+						if (i == 12)
 						{
 							if (m_dsSec)
 							{
@@ -233,7 +241,7 @@ public:
 
 		if( bSelect )
 		{
-			if( m_iSelection > 3 && m_iSelection < 11 )
+			if( m_iSelection > 4 && m_iSelection < 12 )
 			{
 				m_dSec = 6;
 				listenid = m_iSelection-4;
@@ -241,7 +249,7 @@ public:
 			}
 			else
 			{
-				if (m_iSelection == 11)
+				if (m_iSelection == 12)
 				{
 					Save();
 					m_dsSec = 3;
@@ -262,14 +270,23 @@ public:
 			if( m_iSelection >= m_iSelections )
 				m_iSelection  = 0;
 		}
+		// Set bitepoint
+		if (bLeft && m_iSelection == 3)
+		{
+			--bitepoint;
+		}
+		if (bRight && m_iSelection == 3)
+		{
+			++bitepoint;
+		}
 		//switch joystick
-		if( bLeft && m_iSelection == 3 )
+		if( bLeft && m_iSelection == 4 )
 		{
 			--cindex;
 			if (cindex < 0) cindex = 0;
 			SwitchJoystick(hWin, cindex);
 		}
-		if( bRight && m_iSelection == 3 )
+		if( bRight && m_iSelection == 4 )
 		{
 			++cindex;
 			if (cindex > numj-1) cindex = numj-1;

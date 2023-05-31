@@ -1,0 +1,80 @@
+﻿cl : línea de comandos  warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  RBRTestPlugin.cpp
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(50,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(89,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(91,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(93,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(95,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(143,32): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(152,1): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(204,44): warning C4474: "sprintf": se pasaron demasiados argumentos para la cadena de formato
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(204,44): message : los marcadores de posición y sus parámetros esperan 0 argumentos variádicos, pero se proporcionaron 1
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(151,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(153,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(155,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(162,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(164,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(170,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(172,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(178,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(180,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(185,8): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(190,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(192,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(204,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(224,7): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(343,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(362,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(369,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\TestPlugin.h(396,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\berto\codigo\RBRHshift3.5\di.h(48,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\di.h(144,31): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(175,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(183,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(192,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(200,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(208,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(216,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(224,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(232,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(248,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(256,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(264,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(272,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(280,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(288,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(296,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(304,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(320,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(328,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(336,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(344,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(352,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(360,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(368,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(376,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(392,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(400,53): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(408,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(416,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(424,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(432,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(440,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\di.h(448,55): warning C4554: "&": compruebe la prioridad de operador para posibles errores; utilice paréntesis para indicar la prioridad
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(60,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(70,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(84,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(85,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(87,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(89,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(91,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(93,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(97,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(98,3): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+C:\Users\berto\codigo\RBRHshift3.5\ini.h(20): warning C4172: devolución de dirección de la variable local o temporal: strValue
+C:\Users\berto\codigo\RBRHshift3.5\shifter.h(50): warning C4715: 'GetWindowHandle': no todas las rutas de acceso de control devuelven un valor
+  LINK : no se encontró C:\Games\Richard Burns Rally Original\Plugins\RBRTestPlugin.dll o no lo generó el último vínculo incremental; ejecutando vínculo completo
+PluginHelpers.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/SAFESEH'
+     Creando biblioteca C:\Games\Richard Burns Rally Original\Plugins\RBRTestPlugin.lib y objeto C:\Games\Richard Burns Rally Original\Plugins\RBRTestPlugin.exp
+  RBRTestPlugin.vcxproj -> C:\Games\Richard Burns Rally Original\Plugins\RBRTestPlugin.dll
