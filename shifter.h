@@ -6,6 +6,7 @@
 #include "ini.h"
 #include "di.h"
 
+#pragma comment(lib, "winmm.lib")  // Needed to compile with Visual Studio 2022. Added by manteka
 
 bool didinit = false;
 bool running = true;
@@ -117,7 +118,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 		hWin = GetWindowHandle(GetCurrentProcessId());
 
 
-	//timeBeginPeriod(1);    THIS MUST BE FIXED!!!!!!
+	timeBeginPeriod(1);    
 	while (running == true)
 	{
 		if (!didinit) Init();
