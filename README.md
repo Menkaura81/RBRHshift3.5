@@ -1,5 +1,5 @@
 # RBRHshift3.5
-Richard Burns Rally H Shifter plugin v3.5 (Original code by Racer_S)
+Richard Burns Rally H Shifter plugin v3.5 (**Original code by Racer_S**)
 
 Added the option to select clutch bite point (how much % of the clutch needs to be pressed for allow gears to change). Originally Racer_S hardcoded it to 85% wich is too much in my opinion. So i moded the source code to let you decide how much.
 
