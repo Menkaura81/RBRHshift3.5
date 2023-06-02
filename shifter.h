@@ -24,6 +24,7 @@ int cindex = 0;
 int curgear;
 int lastgear;
 
+
 HWND hWin = NULL;
 DWORD PID = NULL;
 
@@ -141,7 +142,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 				if (KeyDown(Keys[0]))
 				{
 					curgear = 2;
-					if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 2;
+					if (curgear != lastgear && clutchon) 
+					{
+						*(long*)(carptr+0x1100) = 2;
+					}
+					if (curgear != lastgear && !clutchon)
+					{
+						PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+					}
 					lastgear = 2;
 				}
 				else
@@ -149,7 +157,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 					if (KeyDown(Keys[1]))
 					{
 						curgear = 3;
-						if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 3;
+						if (curgear != lastgear && clutchon)
+						{
+							*(long*)(carptr + 0x1100) = 3;
+						}
+						if (curgear != lastgear && !clutchon)
+						{
+							PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+						}
 						lastgear = 3;
 					}
 					else
@@ -157,7 +172,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 						if (KeyDown(Keys[2]))
 						{
 							curgear = 4;
-							if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 4;
+							if (curgear != lastgear && clutchon)
+							{
+								*(long*)(carptr + 0x1100) = 4;
+							}
+							if (curgear != lastgear && !clutchon)
+							{
+								PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+							}
 							lastgear = 4;
 						}
 						else
@@ -165,7 +187,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 							if (KeyDown(Keys[3]))
 							{
 								curgear = 5;
-								if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 5;
+								if (curgear != lastgear && clutchon)
+								{
+									*(long*)(carptr + 0x1100) = 5;
+								}
+								if (curgear != lastgear && !clutchon)
+								{
+									PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+								}
 								lastgear = 5;
 							}
 							else
@@ -173,7 +202,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 								if (KeyDown(Keys[4]))
 								{
 									curgear = 6;
-									if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 6;
+									if (curgear != lastgear && clutchon)
+									{
+										*(long*)(carptr + 0x1100) = 6;
+									}
+									if (curgear != lastgear && !clutchon)
+									{
+										PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+									}
 									lastgear = 6;
 								}
 								else
@@ -181,7 +217,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 									if (KeyDown(Keys[5]))
 									{
 										curgear = 7;
-										if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 7;
+										if (curgear != lastgear && clutchon)
+										{
+											*(long*)(carptr + 0x1100) = 7;
+										}
+										if (curgear != lastgear && !clutchon)
+										{
+											PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+										}
 										lastgear = 7;
 									}
 									else
@@ -189,7 +232,14 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 										if (KeyDown(Keys[6]))
 										{
 											curgear = 0;
-											if (curgear != lastgear && clutchon) *(long*)(carptr+0x1100) = 0;
+											if (curgear != lastgear && clutchon)
+											{
+												*(long*)(carptr + 0x1100) = 0;
+											}
+											if (curgear != lastgear && !clutchon)
+											{
+												PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+											}
 											lastgear = 0;
 										}
 										else
