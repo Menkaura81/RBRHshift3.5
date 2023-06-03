@@ -116,8 +116,11 @@ void Init()
 
 void PlayGrind()
 {
-	int number = rand() % 3 + 1; // Random number between 1 y 3
-	std::string file = "C:\\" + std::to_string(number) + ".wav"; // File path 
+	char exePath[MAX_PATH];
+	GetModuleFileName(NULL, exePath, MAX_PATH);
+	std::string directoryPath = exePath;
+	std::string wavName = "\\Plugins\\Shifter\\" + std::to_string(rand() % 3 + 1) + ".wav";
+	std::string file = directoryPath.substr(0, directoryPath.find_last_of("\\/")) + wavName;
 	PlaySound(TEXT(file.c_str()), NULL, SND_FILENAME);
 }
 
