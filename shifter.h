@@ -5,6 +5,8 @@
 #include "Winuser.h"
 #include "ini.h"
 #include "di.h"
+#include <iostream>
+#include <string>
 
 #pragma comment(lib, "winmm.lib")  // Needed to compile with Visual Studio 2022. Added by manteka
 
@@ -112,6 +114,13 @@ void Init()
 	didinit = true;
 }
 
+void PlayGrind()
+{
+	int number = rand() % 3 + 1; // Random number between 1 y 3
+	std::string file = "C:\\" + std::to_string(number) + ".wav"; // File path 
+	PlaySound(TEXT(file.c_str()), NULL, SND_FILENAME);
+}
+
 
 DWORD WINAPI ShifterMain( LPVOID lpParam )
 {
@@ -148,7 +157,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 					}
 					if (curgear != lastgear && !clutchon)
 					{
-						PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+						PlayGrind();
 					}
 					lastgear = 2;
 				}
@@ -163,7 +172,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 						}
 						if (curgear != lastgear && !clutchon)
 						{
-							PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+							PlayGrind();
 						}
 						lastgear = 3;
 					}
@@ -178,7 +187,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 							}
 							if (curgear != lastgear && !clutchon)
 							{
-								PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+								PlayGrind();
 							}
 							lastgear = 4;
 						}
@@ -193,7 +202,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 								}
 								if (curgear != lastgear && !clutchon)
 								{
-									PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+									PlayGrind();
 								}
 								lastgear = 5;
 							}
@@ -208,7 +217,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 									}
 									if (curgear != lastgear && !clutchon)
 									{
-										PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+										PlayGrind();
 									}
 									lastgear = 6;
 								}
@@ -223,7 +232,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 										}
 										if (curgear != lastgear && !clutchon)
 										{
-											PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+											PlayGrind();
 										}
 										lastgear = 7;
 									}
@@ -238,7 +247,7 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 											}
 											if (curgear != lastgear && !clutchon)
 											{
-												PlaySound("C:\\1.wav", NULL, SND_FILENAME);
+												PlayGrind();
 											}
 											lastgear = 0;
 										}
