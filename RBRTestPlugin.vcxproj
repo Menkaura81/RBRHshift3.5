@@ -62,7 +62,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>dinput8.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)RBRTestPlugin.dll</OutputFile>
+      <OutputFile>$(OutDir)RBRHShift_v3.5.dll</OutputFile>
       <ModuleDefinitionFile>RBRTestPlugin.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)RBRTestPlugin.pdb</ProgramDatabaseFile>

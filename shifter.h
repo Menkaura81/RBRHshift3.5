@@ -49,8 +49,6 @@ HWND GetWindowHandle(DWORD tPID)
 		}
 		res = GetWindow(res, GW_HWNDNEXT);
 	}
-
-
 }
 
 void Load()
@@ -69,12 +67,10 @@ void Load()
 	if (!ReadFromFile("MAIN", "Bite point") == 0) bitepoint = atoi(ReadFromFile("MAIN", "Bite point"));  // Added by manteka
 
 	for (int i = 0; i < 7 ; i++ )
-	{
-		
+	{		
 		sprintf(tmpStr, "Key%d", i);
 		if (!ReadFromFile("MAIN",tmpStr) == 0) Keys[i] = strtoul(ReadFromFile("MAIN",tmpStr),(char**) NULL, 16);
 	}
-
 }
 
 void Save()
@@ -96,15 +92,13 @@ void Save()
 	WriteToFile("MAIN", "RequireClutch", tmpStr2);
 	itoa(bitepoint, tmpStr2, 10);
 	WriteToFile("MAIN", "Bite point", tmpStr2);  // Added by manteka
+
 	for (int i = 0; i < 7 ; i++ )
 	{
 		sprintf(tmpStr, "Key%d", i);
 		itoa(Keys[i], tmpStr2,16);
 		WriteToFile("MAIN",tmpStr, tmpStr2);
 	}
-	
-
-
 }
 
 void Init()
@@ -283,15 +277,10 @@ DWORD WINAPI ShifterMain( LPVOID lpParam )
 }
 DWORD WINAPI Main2( LPVOID lpParam )
 {
-
-
-
 	return 1;
 }
 void StartShifter()
 {
-
-
 	DWORD dwThreadId, dwThrdParam = -1; 
 	HANDLE hThread; 
 
@@ -301,6 +290,5 @@ void StartShifter()
 		ShifterMain,                  // thread function 
 		&dwThrdParam,                // argument to thread function 
 		0,                           // use default creation flags 
-		&dwThreadId);                // returns the thread identifier 
-		
+		&dwThreadId);                // returns the thread identifier 		
 }

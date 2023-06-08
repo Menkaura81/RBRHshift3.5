@@ -121,7 +121,7 @@ public:
 
 				m_pGame->SetMenuColor( IRBRGame::MENU_HEADING );	
 				m_pGame->SetFont( IRBRGame::FONT_BIG );
-				m_pGame->WriteText( 73.0f, 49.0f, "RBR H-Shift 3.0" );
+				m_pGame->WriteText( 73.0f, 49.0f, "RBR H-Shift 3.5" );
 				const char* aszSelections[] =
 				{
 					"Enabled",
@@ -135,7 +135,7 @@ public:
 					"5th Gear",
 					"6th Gear",
 					"Reverse",
-					"Bite point",
+					"Clutch Bite Point",
 					"Save Changes",
 				};
 
